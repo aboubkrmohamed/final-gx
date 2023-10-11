@@ -1,0 +1,481 @@
+@font-face {
+    font-family: 'Metal Gear Solid 2';
+    src: url('/fonts/MGS2.ttf') format('truetype');
+  }
+body{
+    background-color: #0B1143;
+    overflow-x: hidden;
+   
+}
+/* header styling */
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 80%; 
+    width: 100%; 
+}
+/* back to the last page button styling */
+.back-button {
+    position: absolute;
+    background-color: #F24E1E;
+    border-radius: 4px;
+    width: 50px;
+    height: 50px;
+    /* top: -100%; */
+    right: 0%;
+    cursor: pointer;
+    transition: opacity 0.3s ease-in-out;
+    z-index: 444;
+}
+
+
+
+.back-button #i {
+    padding: 10px 15px;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.tester
+{
+    position: absolute;
+    bottom: 27%;
+    background-color: #FF5B00;
+    z-index: -2;
+    left: 10%;
+    height: 3%;
+    width: 3%;
+}
+
+.header img{
+height: 100%;
+width: 100%;
+}
+
+.back-button {
+    position: absolute;
+    background-color: #F24E1E;
+    border-radius: 4px;
+    top: 20%;
+    right: 10%;
+    cursor: pointer;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+
+  .back-button #i {
+    padding: 10px 15px;
+    color: #fff;
+    font-size: 1.5rem;
+  }
+
+
+ .header-title .title{
+    position: absolute;
+    top: 60%;
+    left: 10%;
+    font-weight: 500;
+    color: #fff;
+    font-family: "Metal Gear Solid 2";
+    font-size: 4.5rem;
+    z-index: 2;
+ }
+/* our innovation group stying  */
+.our-group{
+    position: absolute;
+    background-image: url(../img/itdivision/centerimage.png);
+    background-repeat: no-repeat;
+    top: 85%;
+    left: 21%;
+    width: 60%;
+    height: 40%;
+    transition: transform 0.5s ease; 
+    cursor: pointer;
+}
+.our-group:hover {
+    transform: scale(0.9); 
+}
+.our-innovation-text{
+    font-family: "Poppins", Helvetica;
+    font-weight: 500;
+    font-size: 2.2rem;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 0%;
+}
+.Htms-text{
+    font-family: 'Keania One-Regular', Helvetica;
+    font-weight: 400;
+    color: #fc3900;
+    font-size: 4rem;
+    text-align: center;
+    margin-top: 2%;
+}
+
+ 
+.component .Software {
+    background-image: url(../img/itdivision/Rectangle\ 26.svg);
+    font-family: "Jawbreak-Sans", Helvetica;
+    color: #fff;
+    height: 340px;
+    width: 180%;
+    background-repeat: no-repeat;
+    border-radius:25px;
+    margin-left:90% ;
+    margin-top: -30%;
+
+    }
+.component .Hardware {
+    background-image: url(../img/itdivision/Rectangle\ 26.svg);
+    font-family: "Jawbreak-Sans", Helvetica;
+    color: #fff;
+    height:340px;
+    width: 150%;
+    background-repeat: no-repeat;
+    border-radius:50px;
+    margin-top: -35%;
+    }
+.component .Software:hover,.Hardware:hover {
+    transition: 0.5s ease;
+    background-image: url(../img/itdivision/Rectangle\ 26\ hover.svg);
+}
+
+.component .Software h1{
+    font-size: 2.8rem;
+margin-left: 8%;
+padding-top: 25px;
+
+    }
+.component .Hardware h1{
+    font-size: 2.8rem;
+margin-left: 8%;
+padding-top: 25px;
+}
+.component .Software span{
+    font-family: "Poppins", Helvetica;
+    font-weight: 500;
+    margin-left: 45px;
+    font-size: 1.8rem;
+}
+.component .Hardware span{
+    font-family: "Poppins", Helvetica;
+    font-weight: 500;
+    margin-left: 45px;
+    font-size: 1.8rem;
+}
+
+
+/* start scroll to top button  */
+.up-button {
+    display: none;
+    background-color: #FD3900;
+    border-radius: 4px;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    transition: opacity 0.3s ease-in-out;
+    color: #fff;
+  }
+  
+  .up-button:hover {
+    background-color: #F24E1E;
+  }
+  
+  .up-button #to-top-button {
+   font-size: 1.5rem;
+    margin-left: 30%;
+    margin-top: 25%;
+  }
+/* end scroll to top button  */
+
+/* ---------------------------------------start media query--------------------------------------- */
+
+/* 300-450 */
+@media screen and (min-width:300px) and (max-width:450px) {
+    .header {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 60%;
+        width: 100%; 
+    }
+    .header-title .line-title{
+        width: 8%;
+        height: 2%;
+        margin-top: -15%;
+        margin-left: 10%;
+    }
+    .our-innovation-text{
+        font-size: 1.5rem;
+    }
+    .Htms-text{
+        font-size: 2.5rem;
+    }
+
+    .software-hardware{
+        margin-top:10%;
+        left: -15%;
+    }
+    .component .Software {
+        margin-left:0% ;
+        }
+
+}
+@media screen and (min-width:300px) and (max-width:450px) {
+.our-innovation-text{
+    font-size: 1.5rem;
+    margin-top: 0%;
+
+}
+.Htms-text{
+    font-size: 2.5rem;
+}
+.our-group{
+    background-size: 100% 60%;
+    top: 75%;
+    left: 9%;
+    width: 80%;
+    height: 50%;
+}
+.our-innovation-text{
+    font-size: 2.5rem;
+}
+.Htms-text{
+    font-size: 3.5rem;
+
+}
+.software-hardware{
+    margin-top:220%;
+    left: 15%;
+}
+.component .Hardware {
+    background-image: url(../img/itdivision/Rectangle\ 26\ small.png);
+
+}
+.component .Software {
+    background-image: url(../img/itdivision/Rectangle\ 26\ small.png);
+
+}
+.component .Software h1,.component .Hardware h1{
+    font-size:1.8rem;
+    margin-left: 10%;
+
+}
+
+.component .Software span{
+    font-size: 1rem;
+}
+.component .Hardware span{
+    font-size: 1rem;
+
+}
+
+.component .Software:hover,.Hardware:hover {
+    transition: 0.5s ease;
+    background-image: url(../img/itdivision/Rectangle\ 26\ hover\ small.svg);
+}
+
+}
+
+/* 450-576 */
+@media screen and (min-width:450px) and  (max-width:576px) {
+    .header {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 60%;
+        width: 100%; 
+    }
+    .header-title .line-title{
+        width: 8%;
+        height: 2%;
+        margin-top: -55%;
+        margin-left: 10%;
+    }
+    .our-group{
+        background-size: 100% 60%;
+        top: 75%;
+        left: 25%;
+        width: 60%;
+        height: 50%;
+    }
+    .our-innovation-text{
+        font-size: 2.5rem;
+    }
+    .Htms-text{
+        font-size: 3.5rem;
+    
+    }
+    .software-hardware{
+        margin-top:150%;
+        left: 18%;
+    }
+    .component .Software {
+        margin-left:0% ;
+        }
+
+
+}
+
+/* 576-768 */
+@media screen and (min-width:576px) and (max-width:768px) {
+    .header {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 60%;
+        width: 100%; 
+    }
+    .header-title .line-title{
+        width: 8%;
+        height: 2%;
+        margin-top: -55%;
+        margin-left: 10%;
+    }
+      .our-group{
+        background-size: 100% 60%;
+        top: 75%;
+        left: 25%;
+        width: 60%;
+        height: 50%;
+    }
+    .our-innovation-text{
+        font-size: 2.5rem;
+    }
+    .Htms-text{
+        font-size: 3.5rem;
+    
+    }
+    .software-hardware{
+        margin-top:140%;
+        left: 20%;
+    }
+    .component .Software {
+        margin-left:0% ;
+        }
+
+}
+
+
+@media screen and (min-width:768px)  and (max-width:992px) {
+   
+    .header-title .line-title{
+        width: 8%;
+        height: 2%;
+        margin-top: -32%;
+        margin-left: 10%;
+    }
+    .header {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 50%;
+        width: 100%; 
+    }
+    .header-title .line-title{
+        width: 8%;
+        height: 2%;
+        margin-top: -38%;
+        margin-left: 10%;
+    }
+    .our-group{
+        background-size: 100% 60%;
+        top: 75%;
+        left: 20%;
+        width: 60%;
+        height: 50%;
+    }
+    .our-innovation-text{
+        font-size: 2.5rem;
+    }
+    .Htms-text{
+        font-size: 3.5rem;
+    
+    }
+    .software-hardware{
+        margin-top: 100%;
+        left: 4%;
+    }
+    .component .Software {
+        margin-left:0% ;
+        }
+  
+
+}
+@media screen and (min-width:992px)and (max-width:1200px) {
+    .header-title .line-title{
+        width: 8%;
+        height: 2%;
+        margin-top: -28%;
+        margin-left: 10%;
+    }
+    .our-group{
+    
+        background-size: 100% 40%;
+        top: 90%;
+        left: 20%;
+        width: 60%;
+        height: 70%;
+    }
+    .our-innovation-text{
+        font-size: 2rem;
+    }
+    .Htms-text{
+        font-size: 3.5rem;
+    }
+    .header-title .line-title{
+        width: 8%;
+        height: 2%;
+        margin-top: -32%;
+        margin-left: 10%;
+    }
+    .software-hardware{
+        left: 5%;
+        margin-top: 100%;
+    }
+    .component .Software {
+        margin-left:30% ;
+        margin-top:     -30%;
+        }
+  
+    
+
+}
+
+@media screen and (min-width:1200px)and (max-width:1400px) {
+    .header-title .line-title{
+        width: 8%;
+        height: 2%;
+        margin-top: -32%;
+        margin-left: 10%;
+    }
+    .software-hardware{
+        left: 3%;
+        margin-top: 85%;
+    }
+    .component .Software {
+        margin-left:70% 
+        }
+  
+}
+
+@media screen and (min-width:1400px)and (max-width:1800px) {
+    .software-hardware{
+        left: 5%;
+        margin-top: 70%;
+    }
+}

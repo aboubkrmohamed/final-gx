@@ -1,0 +1,150 @@
+@font-face {
+    font-family: 'Metal Gear Solid 2';
+    src: url('/fonts/MGS2.ttf') format('truetype');
+  }
+.dark-blue{
+    position: relative;
+    height: 100vh;     
+    background-color: #0B1143;
+}
+/* header styling */
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 80%;
+    width: 100%; 
+}
+
+.header img{
+ height: 100%;
+    width: 100%;
+}
+
+/* back to the last page button styling */
+.back-button {
+    position: absolute;
+    background-color: #F24E1E;
+    border-radius: 4px;
+    width: 50px;
+    height: 50px;
+    top: 5%;
+    right: 5%;
+    cursor: pointer;
+    transition: opacity 0.3s ease-in-out;
+}
+
+
+
+.back-button #i {
+    padding: 10px 15px;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+/* header title styling */
+
+.header-title .title{
+    position: absolute;
+    top: 60%;
+    left: 10%;
+    font-weight: 500;
+    color: #fff;
+    font-family: "Metal Gear Solid 2";
+    font-size: 4.5rem;
+ }
+.header-title .line-title{
+    width: 8%;
+    height: 2%;
+    margin-top: -24%;
+    margin-left: 10%;
+}
+
+
+/* start scroll to top button  */
+.up-button {
+    display: none;
+    background-color: #FD3900;
+    border-radius: 4px;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    transition: opacity 0.3s ease-in-out;
+    color: #fff;
+}
+
+.up-button:hover {
+    background-color: #F24E1E;
+}
+
+.up-button #to-top-button {
+    font-size: 1.5rem;
+    margin-left: 30%;
+    margin-top: 25%;
+}
+/* end scroll to top button  */
+
+
+
+/* ---------------------------------------start media query--------------------------------------- */
+
+
+@media screen and (min-width:992px)and (max-width:1200px) {
+    .header-title .line-title{
+        width: 8%;
+        height: 2%;
+        margin-top: -28%;
+        margin-left: 10%;
+    }
+}
+
+@media screen and (min-width:1200px)and (max-width:1400px) {
+    .header-title .line-title{
+        width: 8%;
+        height: 2%;
+        margin-top: -32%;
+        margin-left: 10%;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .header {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 60%;
+        width: 100%; 
+    }
+    .header-title .line-title{
+        width: 8%;
+        height: 2%;
+        margin-top: -55%;
+        margin-left: 10%;
+    }
+
+}
+@media screen and (min-width:300px) and (max-width:450px) {
+    .header {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 60%;
+        width: 100%; 
+    }
+    .header-title .line-title{
+        width: 8%;
+        height: 2%;
+        margin-top: -15%;
+        margin-left: 10%;
+    }
+
+}

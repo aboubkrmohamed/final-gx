@@ -1,0 +1,257 @@
+@font-face {
+    font-family: 'Metal Gear Solid 2';
+    src: url('/fonts/MGS2.ttf') format('truetype');
+  }
+body{
+    background-color: #00092F;
+    overflow-x: hidden;
+}
+
+
+/* start header styling */
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 80%; 
+    width: 110%; 
+}
+
+.header img{
+height: 100%;
+width: 100%;
+}
+
+.back-button {
+    position: absolute;
+    background-color: #F24E1E;
+    border-radius: 4px;
+ 
+    top: 10%;
+    right: 15%;
+    cursor: pointer;
+    transition: opacity 0.3s ease-in-out;
+}
+
+
+.back-button #i {
+    padding: 10px 15px;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+
+.header-title .title{
+    position: absolute;
+    top: 60%;
+    left: 10%;
+    font-weight: 500;
+    color: #fff;
+    font-family: "Metal Gear Solid 2";
+    font-size: 4.5rem;
+}
+.header-title .line-title{
+    width: 8%;
+    height: 2%;
+    margin-top: -22%;
+    margin-left: 10%;
+}
+
+
+/* start all projects styling */
+.projects-all{
+    position: relative;
+    margin-top: 50%;
+    margin-left: 10%; 
+    color:#fff ;
+}
+
+.card-title-custom{
+    font-size: 3rem;
+    color: #fff;
+}
+.card-text{
+    color: #fff;
+}
+.See-more{
+    border: none;
+    color:black;
+    background-color: #fff;
+    font-weight: 600;
+    font-family: "Poppins", Helvetica;
+    transition: all 0.5s;
+}
+
+.See-more:hover{
+    background-color: #F24E1E;
+     color: #fff;
+}
+
+.card-custom img{
+    border-radius: 0.1px;
+
+}
+
+.card-custom {
+    background-color: transparent ;
+    border: 2.5px solid #F24E1E  ;
+    border-radius: 0.1px;
+    margin-top: 70px;
+}
+
+
+
+/* start scroll to top button  */
+.up-button {
+    display: none;
+    background-color: #FD3900;
+    border-radius: 4px;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    transition: opacity 0.3s ease-in-out;
+    color: #fff;
+}
+
+.up-button:hover {
+    background-color: #F24E1E;
+}
+
+.up-button #to-top-button {
+    font-size: 1.5rem;
+    margin-left: 30%;
+    margin-top: 25%;
+}
+/* end scroll to top button  */
+
+/* ---------------------------------------start media query--------------------------------------- */
+
+
+
+/* 300-450 */
+@media screen and (min-width:300px) and (max-width:450px) {
+    .header {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 60%;
+        width: 100%; 
+    }
+    .header-title .line-title{
+     display: none;
+    }
+
+    .projects-all{
+        margin-top: 130%;
+        margin-left: 2%;
+     
+    }
+    
+
+
+}
+
+/* 450-576 */
+@media screen and (min-width:450px) and (max-width:576px) {
+    .header {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 60%;
+        width: 100%; 
+    }
+    .header-title .line-title{
+        width: 8%;
+        height: 2%;
+        margin-top: -55%;
+        margin-left: 10%;
+    }
+    .projects-all{
+        position: relative;
+        margin-top: 90%;
+        margin-left: 2%;
+    }
+    
+
+}
+
+
+/* 576-768 */
+@media screen and (min-width:576px) and (max-width:768px) {
+    .header {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 60%;
+        width: 100%; 
+    }
+    .header-title .line-title{
+        display: none;
+    }
+    .projects-all{
+        position: relative;
+        margin-top: 70%;
+        margin-left: 2%;
+    }
+    
+}
+
+/* 768-992 */
+@media screen and (min-width:768px)  and (max-width:992px) {
+   
+    .header-title .line-title{
+        width: 8%;
+        height: 2%;
+        margin-top: -32%;
+        margin-left: 10%;
+    }
+    .header {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 50%;
+        width: 100%; 
+    }
+    .header-title .line-title{
+      display: none;
+    }
+    .projects-all{
+        margin-top: 70%;
+        margin-left: 5%;
+    }
+    
+
+}
+@media screen and (min-width:992px)and (max-width:1200px) {
+    .header-title .line-title{
+        width: 8%;
+        height: 2%;
+        margin-top: -28%;
+        margin-left: 10%;
+    }
+
+}
+
+@media screen and (min-width:1200px)and (max-width:1400px) {
+    .header-title .line-title{
+        width: 8%;
+        height: 2%;
+        margin-top: -32%;
+        margin-left: 5%;
+    }
+    
+}
+
